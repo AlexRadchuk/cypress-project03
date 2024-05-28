@@ -78,7 +78,7 @@ class BookYourTrip {
     return cy.get('.mr-1').eq(1);
   }
 
-  getLabelDepart() {
+  getLabelConfirmDepart() {
     return cy.get('.is-underlined').eq(0);
   }
 
@@ -90,9 +90,30 @@ class BookYourTrip {
     return cy.get('div.field.is-flex > div > p');
   }
 
+  getLabelReturnDate() {
+    return cy.get(' div:nth-child(2) > div > p');
+  }
+
   getLabelPassengerInfo() {
     return cy.get('.mt-4  > p');
   }
+
+  getLabelConfirmReturn() {
+    return cy.get('.is-underlined').eq(1);
+  }
+
+  getLabelReturnFromTo() {
+    return cy.get('.is-italic').eq(1);
+  }
+
+  getPasenger2() {
+    return cy.get(':nth-child(9) > .select > select');
+  }
+
+  getLabelPasenger2() {
+    return cy.get('.mt-4  > p(3)');
+  }
+
 
 
 
